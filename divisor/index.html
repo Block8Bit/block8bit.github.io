@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisor de contas</title>
+    <link rel="icon" type="image/x-icon" href="image.png">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container__conteudo background">
+        <h1>Divisor de contas</h1>
+        <h2 id="mensagem">Divida suas contas <strong>proporcionalmente</strong> ao que ganham!</h2>
+        <div class="container">
+            <div class="container__campo">
+                <label class="texto__paragrafo">Insira o salário da primeira pessoa:</label>
+                <input type="number" min="1" class="container__input" id="salario1">
+            </div>
+
+            <div class="container__campo">
+                <label class="texto__paragrafo">Insira o salário da segunda pessoa:</label>
+                <input type="number" min="1" class="container__input" id="salario2">
+            </div>
+
+            <div class="container__campo">
+                <label class="texto__paragrafo">Insira a conta a dividir:</label>
+                <input type="number" min="1" class="container__input" id="conta">
+            </div>
+        </div>
+        <div>
+            <button onclick="calcular()" class="container__botao">Calcular!</button>
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
