@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Quicksand:wght@300..700&display=swap');
 
 body {
-    background-image: url(./image.png);
+    background-image: url(../assets/image.png);
     color: #f6f6f6;
     box-sizing: border-box;
     width: 100%;
