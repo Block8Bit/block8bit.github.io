@@ -1,0 +1,9 @@
+:root {
+    --cor-principal: #22eefd;
+    --cor-escura: rgba(8, 74, 255, 0.2);
+    --cor-clara: rgb(176, 248, 252);
+    --gradiente: 0 0 10px rgba(0, 234, 255, 0.8), 0 0 20px rgba(0, 234, 255, 0.6), 0 0 30px rgba(0, 234, 255, 0.4);
+    --gradiente-escuro: 0 0 15px rgba(0, 234, 255, 0.6), 0 0 30px rgba(0, 234, 255, 0.4), 0 0 45px rgba(0, 234, 255, 0.2);
+    --gradiente-claro:  0 0 15px rgba(0, 234, 255, 1), 0 0 30px rgba(0, 234, 255, 0.8), 0 0 45px rgba(0, 234, 255, 0.6);
+    --cor-texto: #f6f6f6;
+}
