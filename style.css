@@ -53,14 +53,16 @@ main img:hover {
 
 h1 {
     font-size: 36px;
-    font-family: "Krona One", serif;
+    font-family: var(--fonte-titulos);
     font-weight: 400;
+    color: var(--cor-texto);
 }
 
 p {
     font-size: 24px;
-    font-family: "Quicksand", serif;
+    font-family: var(--fonte-paragrafos);
     font-weight: 400;
+    color: var(--cor-texto);
 }
 
 .apresentacao__links {
@@ -80,7 +82,7 @@ p {
 
 .apresentacao__links__subtitle {
     font-size: 24px;
-    font-family: "Krona One", serif;
+    font-family: var(--fonte-titulos);
     font-weight: 400;
 }
 
@@ -93,7 +95,7 @@ p {
     text-align: center;
     padding: 21.5px 0px;
     text-decoration: none;
-    font-family: "Quicksand", serif;
+    font-family: var(--fonte-paragrafos);
     color: var(--cor-texto);
     font-weight: 600;
     transition: 500ms;
@@ -126,7 +128,7 @@ p {
 }
 
 .footer__texto {
-    font-family: "Quicksand", serif;
+    font-family: var(--fonte-paragrafos);
     color: var(--cor-texto);
     font-weight: 400;
     font-size: 18px;
