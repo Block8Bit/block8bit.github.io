@@ -49,6 +49,7 @@ body {
     color: #050505;
     font-size: 20px;
     padding: 5px;
+    padding-left: 15px;
     font-family: 'Inter', sans-serif;
 
     transition: 0.55s;
@@ -85,21 +86,29 @@ strong {
     color: #00d9ff;
 }
 
-.container__botao {
-    border-radius: 16px;
-    background: #5f5f5f;
-    color:#00d9ff;
+.container__botoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 900px;
+}
+
+.container__botao__calcular {
+    background: #00d9ff;
+    color:#303030;
     padding: 16px 24px;
     font-size: 24px;
-    width: 900px;
+    width: 350px;
     font-weight: 700;
     border: none;
     cursor: pointer;
     margin-top: 3%;
     transition: 0.75s;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px; 
 }
 
-.container__botao:hover {
+.container__botao__calcular:hover {
     background: #4d4d4d;
     color:#75eaff;
     transition: 0.75s;
@@ -114,6 +123,4 @@ strong {
 }
 .numero {
     color: #00d9ff;
-
-
 }
