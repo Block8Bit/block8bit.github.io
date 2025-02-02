@@ -123,4 +123,11 @@ strong {
 }
 .numero {
     color: #00d9ff;
+    transition: 0.5s;
+}
+
+.numero:hover {
+    color: #d1f8ff;
+    text-shadow: 0 0 10px rgba(0, 255, 229, 0.6), 0 0 20px rgba(0, 255, 229, 0.4), 0 0 30px rgba(0, 255, 229, 0.2);
+    transition: 0.5s;
 }

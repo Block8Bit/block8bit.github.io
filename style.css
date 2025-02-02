@@ -17,7 +17,6 @@ body {
 
 .apresentacao__titulo:hover {
     color: var(--cor-clara);
-    padding-top: 5px;
     transition: 500ms;
     text-shadow: var(--gradiente)
 }

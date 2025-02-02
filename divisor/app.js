@@ -3,7 +3,14 @@ function calcular() {
   let salario2 = parseFloat(document.querySelector("#salario2").value);
   const salarioTotal = salario1 + salario2;
   let conta = parseFloat(document.querySelector("#conta").value);
-  if (isNaN(salario1) || isNaN(salario2) || isNaN(conta)) {
+  if (
+    isNaN(salario1) ||
+    isNaN(salario2) ||
+    isNaN(conta) ||
+    salario1 <= 0 ||
+    salario2 <= 0 ||
+    conta <= 0
+  ) {
     let mensagem = document.querySelector("h2");
     mensagem.innerHTML = `Insira valores válidos!`;
   } else {
