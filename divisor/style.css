@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Quicksand:wght@300..700&display=swap');
+
 body {
     background-image: url(./background.png);
     color: #000000;
@@ -50,8 +52,8 @@ body {
     font-size: 20px;
     padding: 5px;
     padding-left: 15px;
-    font-family: 'Inter', sans-serif;
-
+    margin-left: 25px;
+    font-family: "Quicksand", serif;
     transition: 0.55s;
 }
 
@@ -62,7 +64,7 @@ body {
 }
 
 h1 {
-    font-family: 'Inter', sans-serif;
+    font-family:"Krona One", serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -80,6 +82,7 @@ h2 {
     place-self: center;
     padding-left: 5%;
     padding-right: 5%;
+    font-family: "Quicksand", serif;
 }
 
 strong {
@@ -106,6 +109,7 @@ strong {
     transition: 0.75s;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px; 
+    font-family: "Quicksand", serif;
 }
 
 .container__botao__calcular:hover {
@@ -116,7 +120,7 @@ strong {
 
 .texto__paragrafo {
     color: #fffafa;
-    font-family: 'Inter';
+    font-family:"Quicksand", serif;;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -145,7 +149,7 @@ strong {
 }
 
 .footer__texto {
-    font-family: 'Inter';
+    font-family: "Quicksand", serif;
     color: #00d9ff;
     font-weight: 500;
     font-size: 18px;
