@@ -13,11 +13,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 8% 10%;;
+    margin: 8% 10%;
+    gap: 40px;
 }
 
 .apresentacao__conteudo {
-    width: 800px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -37,8 +38,7 @@ body {
 }
 
 main img {
-    display: inline-block;
-    width: 450px;
+    width: 30%;
     border: var(--cor-principal) 2px solid;
     border-radius: 8px;
     box-shadow: var(--gradiente-escuro);
@@ -51,14 +51,14 @@ main img:hover {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-titulos);
     font-weight: 400;
     color: var(--cor-texto);
 }
 
 p {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-paragrafos);
     font-weight: 400;
     color: var(--cor-texto);
@@ -80,7 +80,7 @@ p {
 }
 
 .apresentacao__links__subtitle {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-titulos);
     font-weight: 400;
 }
@@ -89,7 +89,7 @@ p {
     background-color: transparent;
     border: var(--cor-principal) 2px outset;
     width: 378px;
-    font-size: 24px;
+    font-size: 1.5rem;
     border-radius: 8px;
     text-align: center;
     padding: 21.5px 0px;
@@ -129,7 +129,7 @@ p {
     font-family: var(--fonte-paragrafos);
     color: var(--cor-texto);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .footer__texto__strong {
@@ -137,7 +137,7 @@ p {
     background-clip: text;
     color: transparent;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .fa-music {
@@ -157,5 +157,37 @@ p {
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1450px) {
+
+    .apresentacao__links {
+        flex-direction: column-reverse;
+        padding-bottom: 50px;
+    }
+
+    .apresentacao__conteudo {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao__conteudo, main img, .apresentacao__links, .apresentacao__links__botoes {
+        width: 70vw;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .apresentacao__conteudo, main img {
+        width: 70vw;
+        align-items: center;
     }
 }
