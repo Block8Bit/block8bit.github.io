@@ -62,6 +62,7 @@ p {
     font-family: var(--fonte-paragrafos);
     font-weight: 400;
     color: var(--cor-texto);
+    text-align: justify;
 }
 
 .apresentacao__links {
@@ -176,6 +177,7 @@ p {
 @media (max-width: 1000px) {
     .apresentacao {
         flex-direction: column-reverse;
+        padding: 5%;
     }
 
     .apresentacao__conteudo, main img, .apresentacao__links, .apresentacao__links__botoes {
