@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de tempo juntos</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/ec175e5d35.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 class="container__titulo textos">Oi mozão!</h1>
+            <h2 class="container__subtitulo textos">Eu te amo muito demais e nada vai mudar isso, meu lindão</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="./assets/aviao.jpg" alt="Image 1">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="./assets/g7.jpg" alt="Image 2">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="./assets/halloween.jpg" alt="Image 3">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="./assets/juca.jpg" alt="Image 4">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="./assets/lago.jpg" alt="Image 5">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="./assets/madero.jpg" alt="Image 6">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="./assets/neve.jpg" alt="Image 7">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="./assets/nicolandia.jpg" alt="Image 8">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="./assets/outback.jpg" alt="Image 9">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="./assets/sesi.jpg" alt="Image 10">
+                  </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="counter textos">
+                <p id="countup"></p>
+                <p id="percentage"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="conteudo__footer">
+            <p class="footer__texto">Feito por <strong class="footer__texto__strong">Block8Bit</strong> <i class="fa-solid fa-music"></i></h2>
+        </div>
+    </footer>
+    <script src="main.js" defer></script>
+</body>
+</html>
