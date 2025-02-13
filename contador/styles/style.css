@@ -17,46 +17,46 @@ h1 {
     margin: 10px 0;
 }
 
+.fa-heart {
+    font-size: 2rem;
+}
+
 h2 {
     font-size: 2rem;
     margin: 20px 0;
 }
 
-
-/* Slideshow container */
 .slideshow-container {
     box-sizing: border-box;
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly; /* Center the images */
-    position: relative; /* Required for positioning the prev/next buttons */
-    width: 70vw; /* Responsive width (relative to viewport width) */
-    height: 60vh; /* Set a fixed height for the carousel */
-    overflow: hidden; /* Hide images outside the container */
+    justify-content: space-evenly;
+    position: relative;
+    width: 70vw;
+    height: 60vh;
+    overflow: hidden; 
 }
 
-/* Hide the images by default */
 .mySlides {
     display: none;
-    width: 100%; /* Ensure images take up the full width of the container */
-    height: 100%; /* Ensure images fill the height of the container */
+    width: 100%; 
+    height: 100%;
 }
 
-/* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
-    position: absolute; /* Position buttons inside the container */
-    top: 50%; /* Center buttons vertically */
-    transform: translateY(-50%); /* Adjust to exactly center */
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%); 
     color: white;
     font-weight: bold;
     font-size: 30px;
     padding: 16px;
     transition: 0.6s ease;
     user-select: none;
-    z-index: 10; /* Ensure buttons are on top of the image */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 50%; /* Make buttons round */
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%; 
     height: 50px;
     width: 50px;
     display: flex;
@@ -65,35 +65,34 @@ h2 {
 }
 
 .prev {
-    left: 10px; /* Position to the left side */
+    left: 10px;
 }
 
 .next {
-    right: 10px; /* Position to the right side */
+    right: 10px; 
 }
 
-/* On hover, add a darker background */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    box-shadow: 0 0px 20px rgba(128, 98, 214, .6), 0 0px 30px rgba(128, 98, 214, 0.4), 0 0px 40px rgba(128, 98, 214, 0.2);
+    background-color: #8062D6;
 }
 
-/* Fading animation */
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 @keyframes fade {
-    from { opacity: 0.4; }
-    to { opacity: 1; }
+    from { width: 0%; }
+    to { width: 100%;; }
 }
 
-/* Ensure images fit the container */
+
 .mySlides img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Ensure the image is contained within the container */
-    object-position: center; /* Centers the image in the container */
+    object-fit: contain;
+    object-position: center;
 }
 
 .conteudo__footer {
@@ -130,6 +129,11 @@ h2 {
     animation: none;
     margin-left: 5px;
     color: #f6f6f6;
+}
+
+#heart__footer {
+    font-size: 1rem;
+    margin: 0 2px;
 }
 
 .fa-music:hover {

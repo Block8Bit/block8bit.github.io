@@ -46,7 +46,7 @@ function updateCountup() {
     100,
     (diff / totalLifeMillisecondsLucas) * 100
   );
-  const formattedTime = ` Estamos juntos há ${years} ${pluralize(
+  const formattedTime = ` Estamos namorandinho gays há ${years} ${pluralize(
     years,
     "ano",
     "anos"
