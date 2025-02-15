@@ -181,3 +181,36 @@ strong {
         transform: rotate(360deg);
     }
 }
+
+@media (max-width: 1100px) {
+    .container__conteudo {
+        width: 85vw;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 666px) {
+    .container {
+        margin: 0 5vw;
+    }
+}
+
+@media (max-width: 460px) {
+    .container__input {
+        width: 60vw;
+    }
+
+    .container__input::placeholder {
+        color: transparent;
+        transition: 0.5s;
+    }
+
+    .container__campo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
