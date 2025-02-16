@@ -14,23 +14,32 @@
         <h1>Divisor de contas</h1>
         <h2 id="mensagem">Divida suas contas <strong>proporcionalmente</strong> ao que ganham!</h2>
         <div class="container">
+            <div class="container__salarios">
             <div class="container__campo">
-                <label class="texto__paragrafo">Insira o salário da primeira pessoa:</label>
-                <input type="number" min="1" class="container__input" id="salario1" placeholder="Salário 1">
+                <label class="texto__paragrafo">Insira o salário da 1ª pessoa:</label>
+                <div class="container__input__toggle">
+                    <input type="password" min="1" class="container__input__salario" id="salario1" placeholder="Salário 1">
+                    <button class="toggle-input" onclick="toggleInputVisibility('salario1')"><i class="fa-solid fa-eye"></i></button>
+                </div>
             </div>
-
+    
             <div class="container__campo">
-                <label class="texto__paragrafo">Insira o salário da segunda pessoa:</label>
-                <input type="number" min="1" class="container__input" id="salario2" placeholder="Salário 2">
+                <label class="texto__paragrafo">Insira o salário da 2ª pessoa:</label>
+                <div class="container__input__toggle">
+                    <input type="password" min="1" class="container__input__salario" id="salario2" placeholder="Salário 2">
+                    <button class="toggle-input" onclick="toggleInputVisibility('salario2')"><i class="fa-solid fa-eye"></i></button>
+                </div>
             </div>
+        </div>
 
             <div class="container__campo">
                 <label class="texto__paragrafo">Insira a conta a dividir:</label>
-                <input type="number" min="1" class="container__input" id="conta" placeholder="Valor da conta">
+                <input type="number" min="1" class="container__input container__conta" id="conta" placeholder="Valor da conta">
             </div>
         </div>
         <div class="container__botoes">
-            <button onclick="calcular()" class="container__botao__calcular">Calcular!</button>
+            <button onclick="calcular()" class="container__botao__calcular container__botao">Calcular!</button>
+            <button onclick="adicionar()" class="container__botao__adicionar container__botao">Adicionar pessoa</button>
         </div>
     </div>
 

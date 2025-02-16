@@ -18,9 +18,10 @@ body {
     opacity: 0.95;
     display: flex;
     width: 900px;
+    max-height: 70vh;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     border-radius: 24px;
     border: 3px solid #000000;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4), 0 0 45px rgba(255, 255, 255, 0.2);
@@ -29,6 +30,13 @@ body {
     color: #f6f6f6;
     gap: 20px;
     transition: 0.5s;
+    overflow-y: auto;
+    margin: 60px 0; 
+    scrollbar-width: none;
+}
+
+.container__conteudo::-webkit-scrollbar {
+    display: none;
 }
 
 .container__conteudo:hover {
@@ -41,10 +49,49 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 12px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
-.container__input {
-    width: 40%;
+.container__input:hover, .container__input__salario:hover {
+    background-color: #00d9ff;
+    color: #000000;
+    transition: 0.55s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.container__campo.added {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.container__campo.removing {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+.container__input__toggle {
+    display: flex;
+    width: 48%;
+}
+
+.container__input__salario {
+    width: 10em;
     border-radius: 13px;
     background-color: #edecec;
     border: none;
@@ -57,9 +104,34 @@ body {
     transition: 0.55s;
 }
 
-.container__input:hover {
-    background-color: #00d9ff;
-    color: #000000;
+.container__input__salario:disabled {
+    background-color: #f3f3f3;
+}
+
+.toggle-input {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-input:hover {
+    background-color: #000000;
+}
+
+.container__conta {
+    width: 10em;
+    border-radius: 13px;
+    background-color: #edecec;
+    border: none;
+    color: #050505;
+    font-size: 1.25rem;
+    padding: 5px;
+    padding-left: 15px;
+    margin-left: 122px;
+    font-family: "Quicksand", serif;
     transition: 0.55s;
 }
 
@@ -92,15 +164,16 @@ strong {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row-reverse;
     width: 900px;
 }
 
-.container__botao__calcular {
+.container__botao {
     background: #00d9ff;
     color:#303030;
     padding: 16px 24px;
     font-size: 1.5rem;
-    width: 350px;
+    width: 290px;
     font-weight: 700;
     border: none;
     cursor: pointer;
@@ -111,11 +184,23 @@ strong {
     font-family: "Quicksand", serif;
 }
 
-.container__botao__calcular:hover {
+.container__botao__adicionar, .container__botao__remover {
     background: #4d4d4d;
     color:#75eaff;
+}
+
+.container__botao__calcular:hover {
+    background: #75eaff;
+    color:#000;
     transition: 0.75s;
 }
+
+.container__botao__adicionar:hover, .container__botao__remover:hover {
+    background: #75eaff;
+    color:#000;
+    transition: 0.75s;
+}
+
 
 .texto__paragrafo {
     color: #fffafa;
@@ -182,8 +267,9 @@ strong {
     }
 }
 
+
 @media (max-width: 1100px) {
-    .container__conteudo {
+    .container__conteudo, .container__botoes {
         width: 85vw;
     }
 
@@ -192,18 +278,29 @@ strong {
     }
 }
 
+@media (max-width: 880px) {
+    .container__botoes {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .container__botao {
+        border-radius: 24px;
+    }}
+
 @media (max-width: 666px) {
     .container {
         margin: 0 5vw;
     }
-}
-
-@media (max-width: 460px) {
-    .container__input {
-        width: 60vw;
+    .container__conta {
+        margin-right: 130px;
     }
 
-    .container__input::placeholder {
+    .container__input__salario {
+        width: 55vw;
+    }
+
+    .container__input::placeholder, .container__input__salario::placeholder {
         color: transparent;
         transition: 0.5s;
     }
@@ -212,5 +309,14 @@ strong {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        align-items: center;
+        justify-content: center;
     }
+
+    .container__input__toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
