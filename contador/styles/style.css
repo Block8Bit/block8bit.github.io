@@ -1,10 +1,10 @@
 body {
     background-color: #1a142a;
     color: #FFD2D7;
+    font-family: "Sour Gummy", serif;
 }
 
 .textos {
-    font-family: "Sour Gummy", serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,13 +87,73 @@ h2 {
     to { width: 100%;; }
 }
 
-
 .mySlides img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center;
 }
+
+p {
+    font-size: 1.5rem;
+    margin: 10px;    
+}
+
+.counter {
+    padding-bottom: 70px ;
+    z-index: 12;
+}
+
+.section__quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__quiz {
+    width: 45vw;
+    margin-bottom: 7.5%;
+    padding: 20px;
+    background-color: #8062D6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(198, 222, 60, 0.2);
+    color: white;
+}
+
+.container__subtitulo__quiz {
+    margin-bottom: 5%;
+}
+
+#question {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+#options {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    color: white;
+    background-color: #342854;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: 250ms;
+}
+
+button:hover {
+    background-color: #a287ea;
+    transition: 250ms;
+}
+
 
 .conteudo__footer {
     background: linear-gradient(#8062D6, #000);
@@ -149,16 +209,6 @@ h2 {
     }
 }
 
-p {
-    font-size: 1.5rem;
-    margin: 10px;    
-}
-
-.counter {
-    padding-bottom: 70px ;
-    z-index: 12;
-}
-
 @media (max-width: 700px) {
     .conteudo__footer {
         margin-top: 20px;
@@ -167,13 +217,23 @@ p {
     .prev, .next {
        padding: 10px;
     }
+
+    #options {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .conteudo__footer {
         margin-top: 30px;
     }
     .prev, .next {
         padding: 5px;
+    }
+
+    .container__quiz {
+        width: 75vw;
+        margin-bottom: 10%;
     }
 }
