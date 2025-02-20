@@ -118,6 +118,12 @@ p {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(198, 222, 60, 0.2);
     color: white;
+    transition: 250ms;
+}
+
+.container__quiz:hover {
+    box-shadow: 0 0 20px rgba(128, 98, 214, .6), 0 0 30px rgba(128, 98, 214, 0.4), 0 0 40px rgba(128, 98, 214, 0.2);
+    transition: 250ms;
 }
 
 .container__subtitulo__quiz {
@@ -152,6 +158,8 @@ button {
 button:hover {
     background-color: #a287ea;
     transition: 250ms;
+    border: #f6f6f6 solid 1px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.2), 0 0 45px rgba(255, 255, 255, 0.1);
 }
 
 
@@ -242,5 +250,9 @@ button:hover {
 
     .section__quiz {
         margin-bottom: 30%;
+    }
+
+    h1 {
+        font-size: 3rem;
     }
 }

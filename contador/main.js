@@ -294,7 +294,7 @@ function selectAnswer(e) {
 
 function showResult() {
   quizElement.innerHTML = `
-    <h1 class="textos">Quiz Completed!</h1>
+    <h1 class="textos">Mozi cunsiguiu!!</h1>
     <p class="textos">Your score: ${score}/${quizData.length}</p>
   `;
 }
