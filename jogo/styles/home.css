@@ -1,0 +1,67 @@
+@import url(vars.css);
+
+body {
+    background: linear-gradient(to right, var(--azul-escuro), var(--azul-claro), var(--rosa-claro), var(--rosa-escuro));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+    background: #f8f2dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    border: 1px solid #000000;
+    box-shadow: 
+        10px -10px 20px rgba(44, 140, 153, 1),
+        -10px 10px 20px rgba(219, 41, 85, 1),
+        0 0 30px rgba(44, 140, 153, 0.6),       
+        0 0 30px rgba(219, 41, 85, 0.6);  
+    color: #011936;
+    transition: 0.5s;
+    gap: 2em;
+    padding: 3em 2em;
+}
+
+
+.container__title {
+    font-size: 2.5rem;
+}
+
+.title__strong {
+    color: var(--rosa-escuro);
+    transition: 500ms;
+}
+
+.title__strong:hover {
+    text-shadow: 0 0 10px rgba(141, 4, 22, 0.8), 0 0 20px rgba(141, 4, 22, 0.6), 0 0 30px rgba(141, 4, 22, 0.4);
+    transition: 500ms;
+}
+
+.container__description {
+    font-size: 1.5rem;
+}
+
+.container__buttons {
+    display: flex;
+    gap: 3em;
+}
+
+.container__button {
+    text-decoration: none;
+    color: var(--branco);
+    padding: 1em 1.5em;
+    border-radius: 24px;
+    background-color: var(--rosa-escuro);
+}
+
+.button-jogar {
+    background-color: var(--azul-escuro)
+}
+
+
